@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
+--
+-- Host: localhost    Database: hotel
+-- ------------------------------------------------------
+-- Server version	8.0.27
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `customer_stay_detail`
+--
+
+DROP TABLE IF EXISTS `customer_stay_detail`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `customer_stay_detail` (
+  `Customer_stay_Detail_ID` int NOT NULL,
+  `Check_In_Date` int DEFAULT NULL,
+  `Check_Out_Date` int DEFAULT NULL,
+  `Hotel_Room_Type_ID` int DEFAULT NULL,
+  `Check_For_Customer` int DEFAULT NULL,
+  `inuse` int DEFAULT NULL,
+  PRIMARY KEY (`Customer_stay_Detail_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `customer_stay_detail`
+--
+
+LOCK TABLES `customer_stay_detail` WRITE;
+/*!40000 ALTER TABLE `customer_stay_detail` DISABLE KEYS */;
+INSERT INTO `customer_stay_detail` VALUES (1,30,31,1131,1,0),(2,365,368,1141,1,0),(3,14,24,1582,1,0),(4,1,8,1172,1,0),(5,1,4,1152,1,0),(6,1,7,1131,1,0),(7,1,7,1111,1,0),(8,1,7,1121,1,0),(9,1,8,1241,1,0),(10,3,8,1231,1,0),(11,1,8,1221,1,0),(12,1,8,1211,1,0),(13,1,8,1341,1,0),(14,1,9,1331,1,0),(15,1,8,1321,1,0),(16,1,8,1311,1,0),(17,1,8,1441,1,0),(18,1,8,1431,1,0),(19,1,8,1421,1,0),(20,1,8,1411,1,0),(21,1,8,1541,1,0),(22,1,8,1531,1,0),(23,1,128,1521,1,0),(24,1,8,1511,1,0),(25,1,8,1641,1,0),(26,1,8,1631,1,0),(27,1,8,1621,1,0),(28,1,8,1611,1,0),(29,1,8,1741,1,0),(30,1,8,1731,1,0),(31,1,8,1721,1,0),(32,1,8,1711,1,0),(33,1,8,1841,1,0),(34,1,8,1831,1,0),(35,1,8,1821,1,0),(36,1,8,1811,1,0),(37,1,8,1941,1,0),(38,1,8,1931,1,0),(39,1,8,1921,1,0),(40,1,8,1911,1,0),(41,1,8,11041,1,0),(42,1,8,11031,1,0),(43,1,8,11021,1,0),(44,1,8,11011,1,0),(45,1,31,1162,1,0),(46,15,24,11021,1,0),(47,1,23,13113,1,0),(48,1,8,1393,1,0),(49,1,31,13103,1,0),(50,1,16,1372,1,0),(51,1,24,1193,1,0),(52,1,16,1272,1,0),(53,22,31,1172,1,0),(54,1,24,1382,1,0),(55,28,31,1111,0,0),(56,21,23,1111,1,0),(57,30,31,1111,1,0),(58,30,31,1121,1,0),(59,303,306,11041,1,0),(60,1,16,11082,1,0),(61,25,29,1111,1,0),(62,1,8,1282,1,0),(63,9,16,1141,1,0),(64,9,16,1182,1,0),(65,1,8,1141,1,0),(66,1,8,1182,1,0),(67,1,8,11103,1,0),(68,11,15,1731,1,0),(69,23,24,1731,1,0);
+/*!40000 ALTER TABLE `customer_stay_detail` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-02-22 20:15:28

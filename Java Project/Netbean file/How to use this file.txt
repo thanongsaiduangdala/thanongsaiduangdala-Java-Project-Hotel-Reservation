@@ -1,0 +1,4 @@
+How to use this file?
+To use this file, first you need to import the file call Hotel by using the import function on the file menu on the top right corner.
+Once you have import it, Run the class file call Lao_Poet_Hotel_Page.java.
+
